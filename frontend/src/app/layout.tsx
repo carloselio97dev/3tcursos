@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "3T Cursos de TI – Capacitación B2B",

@@ -3,7 +3,6 @@ import Link from "next/link";
 
 // Datos de ejemplo - En un caso real, esto vendría de una base de datos
 const cursosData = {
-  // Microsoft Azure
   "sc-100": {
     titulo: "SC-100: Microsoft Cybersecurity Architect",
     descripcion: "Aprende a diseñar e implementar estrategias de ciberseguridad empresarial con Microsoft Azure.",
@@ -49,7 +48,6 @@ const cursosData = {
       examen: "AZ-900",
     },
   },
-  // AWS
   "aws-cp": {
     titulo: "AWS Certified Cloud Practitioner",
     descripcion: "Certificación fundamental de AWS para comprender los servicios en la nube.",
@@ -72,10 +70,25 @@ const cursosData = {
       examen: "CLF-C01",
     },
   },
-};
+} as const;
 
-export default function CursoDetalle({ params }: { params: { id: string } }) {
-  const curso = cursosData[params.id as keyof typeof cursosData];
+type CursoId = keyof typeof cursosData;
+
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default async function CursoDetalle({ params }: PageProps) {
+  // Esperamos a que los parámetros estén disponibles
+  const { id } = await params;
+  
+  // Verificamos que el ID sea válido
+  if (!Object.keys(cursosData).includes(id)) {
+    notFound();
+  }
+
+  // Obtenemos el curso
+  const curso = cursosData[id as CursoId];
 
   if (!curso) {
     notFound();

@@ -47,7 +47,7 @@ export default function Testimonials() {
   return (
     <section className="relative py-24 bg-[#1E3A8A]/5 overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.02]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4">
