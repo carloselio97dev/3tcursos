@@ -1,8 +1,27 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
+// Tipo para los niveles de curso
+type NivelCurso = "Principiante" | "Intermedio" | "Avanzado" | "Experto";
+
+// Interfaz para los datos del curso
+interface CursoData {
+  titulo: string;
+  descripcion: string;
+  nivel: NivelCurso;
+  duracion: string;
+  categoria: string;
+  requisitos: string[];
+  temas: string[];
+  certificacion: {
+    nombre: string;
+    validez: string;
+    examen: string;
+  };
+}
+
 // Datos de ejemplo - En un caso real, esto vendría de una base de datos
-const cursosData = {
+const cursosData: Record<string, CursoData> = {
   "sc-100": {
     titulo: "SC-100: Microsoft Cybersecurity Architect",
     descripcion: "Aprende a diseñar e implementar estrategias de ciberseguridad empresarial con Microsoft Azure.",
@@ -10,7 +29,7 @@ const cursosData = {
     duracion: "40 horas",
     categoria: "Microsoft Azure Certification",
     requisitos: [
-      "Conocimientos sólidos en seguridad de la nube",
+      "Conocimientos sólidos en seguridad de vla nube",
       "Experiencia con Azure Security Center",
       "Comprensión de arquitecturas cloud",
     ],
@@ -70,7 +89,7 @@ const cursosData = {
       examen: "CLF-C01",
     },
   },
-} as const;
+};
 
 type CursoId = keyof typeof cursosData;
 
