@@ -19,7 +19,7 @@ export default function Header() {
     { label: "Inicio", href: "/" },
     { label: "Cursos", href: "/cursos" },
     { label: "Soluciones", href: "/soluciones" },
-    { label: "Casos", href: "/casos" },
+    { label: "Eventos", href: "/casos" },
     { label: "Recursos", href: "/recursos" },
     { label: "Contacto", href: "/contacto" },
   ];
@@ -52,7 +52,7 @@ export default function Header() {
 
           {/* Acciones Desktop */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link
+            {/*  <Link
               href="/area-empresa"
               className={`transition-colors ${
                 isActive("/area-empresa")
@@ -62,6 +62,9 @@ export default function Header() {
             >
               Área empresa
             </Link>
+            */}
+           
+
             <Link
               href="/cotizar"
               className="bg-white text-[#1E3A8A] px-4 py-2 rounded font-medium hover:bg-white/90 transition-colors"
