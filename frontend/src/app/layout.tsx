@@ -7,7 +7,7 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 export const metadata: Metadata = {
   title: "3T Cursos de TI – Capacitación B2B",
   description:
-    "Cursos corporativos en Azure, Data y Ciberseguridad con licencias por volumen.",
+    "Centro de entranamiento y capacitación en cursos TI.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

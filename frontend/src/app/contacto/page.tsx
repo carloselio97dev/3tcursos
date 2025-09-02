@@ -45,7 +45,7 @@ export default function Contacto() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-slate-600">ventas@3tcursos.pe</p>
+                  <p className="text-slate-600">ventas@3tcursos.com</p>
                 </div>
               </div>
 

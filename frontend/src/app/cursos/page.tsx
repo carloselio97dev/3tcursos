@@ -14,7 +14,7 @@ export default function Cursos() {
     {
       id: "azure",
       titulo: "Microsoft Azure Certification",
-      descripcion: "Certificaciones oficiales de Microsoft Azure para todos los niveles",
+      descripcion: "Cursos de preparación para los examenes de certificación oficial de Microsoft.",
       cursos: [
         { id: "sc-100", titulo: "SC-100: Microsoft Cybersecurity Architect", nivel: "Experto" },
         { id: "dp-900", titulo: "DP-900: Microsoft Certified: Azure Data Fundamentals", nivel: "Principiante" },
@@ -30,7 +30,7 @@ export default function Cursos() {
     {
       id: "aws",
       titulo: "Amazon Web Services",
-      descripcion: "Certificaciones oficiales de AWS para roles especializados",
+      descripcion: "Cursos de preparación para los examenes de certificación oficial de AWS.",
       cursos: [
         { id: "aws-cp", titulo: "AWS Certified Cloud Practitioner", nivel: "Principiante" },
         { id: "aws-sysops", titulo: "AWS Certified SysOps Administrator", nivel: "Intermedio" },
@@ -46,7 +46,7 @@ export default function Cursos() {
     {
       id: "kubernetes",
       titulo: "Kubernetes Certification",
-      descripcion: "Certificaciones oficiales de la Cloud Native Computing Foundation",
+      descripcion: "Cursos de preparación para los examenes de certificación oficial de Kubernetes",
       cursos: [
         { id: "cka", titulo: "Certified Kubernetes Administrator", nivel: "Avanzado" },
         { id: "ckad", titulo: "Certified Kubernetes Application Developer", nivel: "Avanzado" },
@@ -56,7 +56,7 @@ export default function Cursos() {
     {
       id: "confluent",
       titulo: "Confluent Certification",
-      descripcion: "Certificaciones especializadas en Apache Kafka",
+      descripcion: "Cursos de preparación para los examenes de certificación oficial de Confluent.",
       cursos: [
         { id: "kafka-dev", titulo: "Confluent Certified Developer for Apache Kafka", nivel: "Intermedio" },
         { id: "kafka-admin", titulo: "Confluent Certified Administrator for Apache Kafka", nivel: "Intermedio" },
@@ -80,7 +80,7 @@ export default function Cursos() {
     {
       id: "mobile",
       titulo: "Mobile",
-      descripcion: "Desarrollo de aplicaciones móviles multiplataforma",
+      descripcion: "Desarrollo de aplicaciones móviles nativas y multiplataforma",
       cursos: [
         { id: "android", titulo: "Desarrollo de aplicaciones móviles con Android", nivel: "Intermedio" },
         { id: "ios", titulo: "Desarrollo de aplicaciones móviles con iOS", nivel: "Intermedio" },
@@ -88,8 +88,8 @@ export default function Cursos() {
       ]
     },
     {
-      id: "backend",
-      titulo: "Backend",
+      id: "server",
+      titulo: "Server side",
       descripcion: "Arquitectura y desarrollo de microservicios",
       cursos: [
         { id: "spring", titulo: "Diseño de Arquitectura y desarrollo de microservicios con Spring Boot", nivel: "Avanzado" },
