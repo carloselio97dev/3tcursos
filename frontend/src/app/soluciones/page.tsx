@@ -13,13 +13,13 @@ export default function Soluciones() {
     },
     {
       id: 2,
-      titulo: "Licencias por Volumen",
-      descripcion: "Gestión de licencias para software empresarial.",
+      titulo: "Desarrollo de Software a Medida",
+      descripcion: "Creamos soluciones tecnológicas adaptadas a las necesidades específicas de tu negocio.",
       caracteristicas: [
-        "Precios preferenciales",
-        "Portal de administración",
-        "Soporte técnico dedicado",
-        "Renovación automática",
+        "Análisis detallado de requerimientos",
+        "Diseño centrado en el usuario",
+        "Desarrollo ágil y colaborativo",
+        "Soporte y mantenimiento continuo",
       ],
     },
     {
