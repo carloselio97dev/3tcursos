@@ -42,13 +42,13 @@ export default function Casos() {
     <main className="py-12">
       <div className="mx-auto max-w-7xl px-4">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold mb-4">Casos de Éxito</h1>
+          <h1 className="text-4xl font-bold mb-4">Próximos eventos</h1>
+
           <p className="text-lg text-slate-600 mb-8">
-            Descubre cómo hemos ayudado a otras empresas a alcanzar sus objetivos tecnológicos.
+            Descubre los eventos que tenemos programados para compartir conocimiento con nuestra comunidad.
           </p>
         </div>
-
-        <div className="space-y-8">
+        {/*  <div className="space-y-8">
           {casos.map((caso) => (
             <div
               key={caso.id}
@@ -96,7 +96,8 @@ export default function Casos() {
               </div>
             </div>
           ))}
-        </div>
+        </div>*/}
+       
       </div>
     </main>
   );

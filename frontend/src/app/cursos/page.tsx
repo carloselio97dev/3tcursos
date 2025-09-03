@@ -135,7 +135,7 @@ export default function Cursos() {
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold mb-4">Nuestros Cursos</h1>
           <p className="text-lg text-slate-600 mb-8">
-            Programas especializados y certificaciones oficiales para potenciar tu carrera en tecnología.
+            Programas especializados y cursos de preparación para certificaciones oficiales que te ayudarán a potenciar tu carrera en tecnología.
           </p>
         </div>
 

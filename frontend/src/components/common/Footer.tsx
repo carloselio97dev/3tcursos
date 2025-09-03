@@ -106,13 +106,13 @@ export default function Footer() {
             <h5 className="font-semibold text-lg mb-4">Empresa</h5>
             <ul className="space-y-3">
               <li>
-                <Link href="/soluciones" className="text-white/80 hover:text-[#7DD3FC] transition-colors">
-                  Soluciones
+                <Link href="/cursos" className="text-white/80 hover:text-[#7DD3FC] transition-colors">
+                  Cursos
                 </Link>
               </li>
               <li>
                 <Link href="/casos" className="text-white/80 hover:text-[#7DD3FC] transition-colors">
-                  Casos de éxito
+                  Eventos
                 </Link>
               </li>
               <li>
